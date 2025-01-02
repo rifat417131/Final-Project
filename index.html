@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIFAT MOTORS</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind & daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind Styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "main-color": "rgba(231, 111, 81, 1)",
+            "main-color-light": "rgba(231, 111, 81, 0.10)",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Internal Styles -->
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .title-p-color {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+
+<body class="font-poppins">
+  <header class="container mx-auto">
+    <!-- Navigation Start -->
+    <nav>
+      <div class="navbar bg- my-8 px-5">
+        <div class="flex-1">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="font-black normal-case text-2xl md:text-4xl cursor-pointer text-black"><span
+              class="text-main-color">RIFAT</span>MOTORS</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-black text-base font-medium">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <button
+          class="btn bg-main-color text-white capitalize ml-4 min-h-[2.4rem] h-8 px-8 font-bold text-sm md:text-base">
+          login
+        </button>
+      </div>
+    </nav>
+    <!-- Navigation End -->
+    <!-- Slider Start -->
+    <div class="carousel w-full">
+      <!-- Slide 1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="flex flex-col-reverse md:flex-row p-24 items-center bg-main-color-light rounded-lg">
+          <div class="space-y-7 flex-1 text-center md:text-start">
+            <h1 class="text-4xl md:text-6xl font-bold text-black leading-tight mt-20 md:mt-0">
+              Ride-on R15 V4 with Smile
+            </h1>
+            <p class="title-p-color text-base font-light">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              <br />
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-main-color text-white capitalize px-8 font-semibold text-sm md:text-base">
+              purchase
+            </button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/slider/bike1.png" class="w-full md:w-[482px]" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="flex flex-col-reverse md:flex-row p-24 items-center bg-main-color-light rounded-lg">
+          <div class="space-y-7 flex-1 text-center md:text-start">
+            <h1 class="text-4xl md:text-6xl font-bold text-black leading-tight  mt-20 md:mt-0">
+              Ride-on R15 V4 with Smile
+            </h1>
+            <p class="title-p-color text-base font-light">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              <br />
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-main-color text-white capitalize px-8 font-semibold text-sm md:text-base">
+              purchase
+            </button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/slider/bike2.png" class="w-full md:w-[482px]" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="flex flex-col-reverse md:flex-row p-24 items-center bg-main-color-light rounded-lg">
+          <div class="space-y-7 flex-1 text-center md:text-start">
+            <h1 class="text-4xl md:text-6xl font-bold text-black leading-tight  mt-20 md:mt-0">
+              Ride-on R15 V4 with Smile
+            </h1>
+            <p class="title-p-color text-base font-light">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              <br />
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-main-color text-white capitalize px-8 font-semibold text-sm md:text-base">
+              purchase
+            </button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/slider/bike3.png" class="w-full md:w-[482px]" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="flex flex-col-reverse md:flex-row p-24 items-center bg-main-color-light rounded-lg">
+          <div class="space-y-7 flex-1 text-center md:text-start">
+            <h1 class="text-4xl md:text-6xl font-bold text-black leading-tight  mt-20 md:mt-0">
+              Ride-on R15 V4 with Smile
+            </h1>
+            <p class="title-p-color text-base font-light">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              <br />
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-main-color text-white capitalize px-8 font-semibold text-sm md:text-base">
+              purchase
+            </button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/slider/bike4.png" class="w-full md:w-[482px]" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slider End -->
+  </header>
+  
+</body>
+
+</html>
